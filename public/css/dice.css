@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(244.1deg, #860E92 5.14%, #701F9F 36.27%, #0075E2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+    height: 5%;
+}
+
+.small-logo{
+    width: 10%;
+    height: 200%;
+    margin-top: 2em;
+}
+
+.acc-button{
+    color: black;
+    text-decoration: none;
+    height: fit-content;
+    font-size: 36px;
+    margin-top: 1em;
+    font-weight: 700;
+}
+
+.dice-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-row-gap: 3em;
+    grid-column-gap: 30em;
+    margin-top: 4em;
+    width: fit-content;
+    height: fit-content;
+}
+
+.icon{
+    height: fit-content;
+    width: fit-content;
+}
+
+.dice-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.dice-row>button{
+    height: fit-content;
+    background: transparent;
+    border: none;
+}
+
+.dice-row>button:hover{
+    filter: invert(70%);
+}
+
+.roll{
+    height: fit-content;
+    background: transparent;
+    border: none;
+    margin-top: 0.5em;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.roll:hover{
+    filter: invert(70%);
+}
+
+.result{
+    background: #D9D9D9;
+    border-radius: 19px;
+}
