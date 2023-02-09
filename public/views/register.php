@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <script type="text/javascript" src="./public/js/script.js" defer></script>
     <title>REGISTER</title>
 </head>
@@ -10,7 +10,7 @@
     <div class="container">
         <div class="logo-container">
             <div class="logo">
-                <img src="../img/logo.svg">
+                <img src="public/img/logo.svg">
             </div>
             <div class="logo-name">
                 Game Support

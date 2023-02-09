@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/account.css">
+    <link rel="stylesheet" type="text/css" href="public/css/account.css">
 
     <title>ACCOUNT</title>
 </head>
@@ -10,8 +10,8 @@
     <div class="container">
 
         <div class="top">
-            <img class="small-logo" src="../img/logo.svg">
-            <a href="main.html" class="acc-button">Back</a>
+            <img class="small-logo" src="public/img/logo.svg">
+            <a href="main.php" class="acc-button">Back</a>
         </div>
 
         <output for="email-out">email: </output>
