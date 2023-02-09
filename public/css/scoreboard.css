@@ -118,3 +118,16 @@ output{
     margin-left: 0.5em;
     text-align: center;
 }
+
+button{
+    height: fit-content;
+    background: transparent;
+    border: none;
+    margin-top: 1em;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+button:hover{
+    filter: invert(70%);
+}
