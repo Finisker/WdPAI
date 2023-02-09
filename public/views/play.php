@@ -11,7 +11,7 @@
 
         <div class="top">
             <img class="small-logo" src="public/img/logo.svg">
-            <a href="main.php" class="acc-button">Back</a>
+            <a href="http://localhost:8080/main" class="acc-button">Back</a>
         </div>
 
         <div class="players-container">

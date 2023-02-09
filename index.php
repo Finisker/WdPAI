@@ -6,14 +6,14 @@ $path = trim($_SERVER['REQUEST_URI'], '/');
 $path = parse_url($path, PHP_URL_PATH);
 
 Router::get('', 'DefaultController');
-Router::get('projects', 'ProjectController');
+Router::get('main', 'DefaultController');
 Router::post('login', 'SecurityController');
-#Router::post('addProject', 'ProjectController');
-#Router::post('register', 'SecurityController');
-#Router::post('search', 'ProjectController');
-#Router::get('like', 'ProjectController');
-#Router::get('dislike', 'ProjectController');
-#Router::get('map', 'MapController');
-#Router::get('places', 'MapController');
+Router::post('register', 'SecurityController');
+Router::get('account', 'DefaultController');
+Router::get('dice', 'DefaultController');
+Router::post('play', 'DefaultController');
+Router::get('hope', 'DefaultController');
+Router::post('players', 'DefaultController');
+
 
 Router::run($path);
