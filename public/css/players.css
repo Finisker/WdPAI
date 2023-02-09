@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(244.1deg, #860E92 5.14%, #701F9F 36.27%, #0075E2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+    height: 5%;
+}
+
+.small-logo{
+    width: 10%;
+    height: 200%;
+    margin-top: 2em;
+}
+
+.acc-button{
+    color: black;
+    text-decoration: none;
+    height: fit-content;
+    font-size: 36px;
+    margin-top: 1em;
+    font-weight: 700;
+}
+
+.players-container{
+    margin-top: 10vh;
+    width: 30%;
+    height: 70%;
+}
+
+.players{
+    display: flex;
+    flex-direction: column;
+}
+
+.players-place{
+    text-align: center;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 1em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: rgb(104, 169, 211);
+}
+
+.number-place{
+    text-align: center;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: rgb(104, 169, 211);
+}
+
+input,
+textarea {
+    align-self: center;
+    background-color: transparent;
+    border-radius: 33px;
+    border: 1px solid rgb(104, 169, 211);
+    padding: 1em;
+    margin: 1.9em;
+    width: 50%;
+}
+
+button{
+    height: fit-content;
+    background: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+button:hover{
+    filter: invert(70%);
+}
