@@ -44,9 +44,11 @@ body {
     padding: 2em;
     width: fit-content;
     height: fit-content;
+    align-items: center;
+    justify-items: center;
 }
 
-.icon{
+.icon {
     height: fit-content;
     width: fit-content;
 }
