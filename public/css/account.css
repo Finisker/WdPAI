@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(244.1deg, #860E92 5.14%, #701F9F 36.27%, #0075E2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+    height: 5%;
+}
+
+.small-logo{
+    width: 10%;
+    height: 200%;
+    margin-top: 2em;
+}
+
+.acc-button{
+    color: black;
+    text-decoration: none;
+    height: fit-content;
+    font-size: 36px;
+    margin-top: 1em;
+    font-weight: 700;
+}
+
+output{
+    margin-top: 12vh;
+    text-align: center;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 1em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: rgb(104, 169, 211);
+}
+
+button{
+    height: fit-content;
+    background: transparent;
+    border: none;
+    margin-top: 3em;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+button:hover{
+    filter: invert(70%);
+}
