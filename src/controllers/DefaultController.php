@@ -8,4 +8,34 @@ class DefaultController extends AppController {
     {
         $this->render('login');
     }
+
+    public function main()
+    {
+        $this->render('main');
+    }
+
+    public function account()
+    {
+        $this->render('account');
+    }
+
+    public function dice()
+    {
+        $this->render('dice');
+    }
+
+    public function play()
+    {
+        $this->render('play');
+    }
+
+    public function hope()
+    {
+        $this->render('hope');
+    }
+
+    public function players()
+    {
+        $this->render('scoreboard');
+    }
 }
