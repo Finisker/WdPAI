@@ -38,7 +38,7 @@ class SecurityController extends AppController {
         }
 
         $url = "http://$_SERVER[HTTP_HOST]";
-        header("Location: {$url}/projects");
+        header("Location: {$url}/main");
     }
 
     public function register()
@@ -51,16 +51,13 @@ class SecurityController extends AppController {
         $password = $_POST['password'];
         $confirmedPassword = $_POST['confirmedPassword'];
         $name = $_POST['name'];
-        $surname = $_POST['surname'];
-        $phone = $_POST['phone'];
 
         if ($password !== $confirmedPassword) {
-            return $this->render('register', ['messages' => ['Please provide proper password']]);
+            return $this->render('register', ['messages' => ['passwords are different']]);
         }
 
         //TODO try to use better hash function
-        $user = new User($email, md5($password), $name, $surname);
-        $user->setPhone($phone);
+        $user = new User($email, md5($password), $name);
 
         $this->userRepository->addUser($user);
 
