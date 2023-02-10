@@ -14,6 +14,7 @@ Router::get('dice', 'DefaultController');
 Router::post('play', 'DefaultController');
 Router::get('hope', 'DefaultController');
 Router::post('players', 'DefaultController');
-
+Router::get('register_b', 'DefaultController');
+Router::get('login_b', 'DefaultController');
 
 Router::run($path);

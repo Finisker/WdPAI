@@ -18,8 +18,6 @@
     </div>
 
     <div class="login-container">
-
-
         <form class="login" action="login" method="POST">
             <div class="login-place">
                 Login
@@ -36,7 +34,12 @@
                 ?>
             </div>
             <button type="submit">LOGIN</button>
+
         </form>
+        <form class="register-button" action="register_b" method="GET">
+            <button type="submit" href="http://localhost:8080/register">REGISTER</button>
+        </form>
+
     </div>
 </div>
 </body>

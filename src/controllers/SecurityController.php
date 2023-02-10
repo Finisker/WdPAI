@@ -21,7 +21,7 @@ class SecurityController extends AppController {
         }
 
         $email = $_POST['email'];
-        $password = md5($_POST['password']);
+        $password = $this->cipher($_POST['password']);
 
         $user = $this->userRepository->getUser($email);
 
@@ -56,11 +56,15 @@ class SecurityController extends AppController {
             return $this->render('register', ['messages' => ['passwords are different']]);
         }
 
-        //TODO try to use better hash function
-        $user = new User($email, md5($password), $name);
+        $user = new User($email, $this->cipher($password), $name);
 
         $this->userRepository->addUser($user);
 
         return $this->render('login', ['messages' => ['You\'ve been succesfully registrated!']]);
+    }
+
+    private function cipher($password): string
+    {
+        return md5(md5($password));
     }
 }

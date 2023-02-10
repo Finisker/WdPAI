@@ -37,6 +37,9 @@
                 <input name="name" type="text" placeholder="name">
                 <button type="submit">REGISTER</button>
             </form>
+            <form class="login-button" action="login_b" method="GET">
+                <button type="submit" href="http://localhost:8080/login">LOGIN</button>
+            </form>
         </div>
     </div>
 </body>
