@@ -119,7 +119,7 @@ output{
     text-align: center;
 }
 
-button{
+.save_b{
     height: fit-content;
     background: transparent;
     border: none;
@@ -128,6 +128,23 @@ button{
     font-size: 70px;
 }
 
-button:hover{
+.save_b:hover{
     filter: invert(70%);
+}
+
+.test_b{
+    height: fit-content;
+    background: transparent;
+    border: none;
+    margin-top: 1em;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.test_b:hover{
+    filter: invert(70%);
+}
+
+.sum_out{
+    text-align: center;
 }
