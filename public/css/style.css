@@ -97,20 +97,20 @@ textarea {
     }
 
     * {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .login-place{
         font-size: 36px;
     }
 
-    .login-container,
-    .logo {
-        width: 100%;
+    .login-container {
+        width: 80%;
+        margin: auto auto 4em;
     }
 
-    form {
-        margin: auto auto 2em;
+    .logo{
+
     }
 
     img {

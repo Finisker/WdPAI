@@ -52,3 +52,24 @@ body {
     height: fit-content;
     width: fit-content;
 }
+
+.top2{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-device-width: 420px) {
+    .container {
+        flex-direction: column;
+        width: 132vw;
+        height: 132vh;
+    }
+
+    .acc-button{
+        font-size: 100px;
+    }
+
+    .options-grid{
+        margin-bottom: 50em;
+    }
+}

@@ -16,13 +16,14 @@ class SecurityController extends AppController {
 
     public function login()
     {
+        session_start();
+
         if (!$this->isPost()) {
             return $this->render('login');
         }
 
         $email = $_POST['email'];
         $password = $this->cipher($_POST['password']);
-
         $user = $this->userRepository->getUser($email);
 
         if (!$user) {
@@ -36,6 +37,10 @@ class SecurityController extends AppController {
         if ($user->getPassword() !== $password) {
             return $this->render('login', ['messages' => ['Wrong password!']]);
         }
+
+        $_SESSION['id'] = session_id();
+        $_SESSION['role'] = $user->getRole();
+
 
         $url = "http://$_SERVER[HTTP_HOST]";
         header("Location: {$url}/main");
@@ -51,12 +56,17 @@ class SecurityController extends AppController {
         $password = $_POST['password'];
         $confirmedPassword = $_POST['confirmedPassword'];
         $name = $_POST['name'];
+        $role =1;
+
+        if($email == "admin@admin.com"){
+            $role = 0;
+        }
 
         if ($password !== $confirmedPassword) {
             return $this->render('register', ['messages' => ['passwords are different']]);
         }
 
-        $user = new User($email, $this->cipher($password), $name);
+        $user = new User($email, $this->cipher($password), $name, $role);
 
         $this->userRepository->addUser($user);
 
@@ -66,5 +76,11 @@ class SecurityController extends AppController {
     private function cipher($password): string
     {
         return md5(md5($password));
+    }
+
+    public function logout(){
+        session_start();
+        session_destroy();
+        return $this->render('login');
     }
 }

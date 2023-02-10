@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 
-<?php
-if ($_SESSION['role']=="0"){
-    header('Location: http://localhost:8080/main_admin');
-}
-?>
-
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/main.css">
 
     <title>MAIN</title>
 </head>
-
-
 
 <body>
     <div class="container">
@@ -22,6 +14,7 @@ if ($_SESSION['role']=="0"){
             <div class="top2">
                 <a href="http://localhost:8080/account" class="acc-button">Account</a>
                 <a href="http://localhost:8080/logout" class="acc-button">Logout</a>
+                <a href="http://localhost:8080/hope" class="acc-button">Admin Options</a>
             </div>
         </div>
 
