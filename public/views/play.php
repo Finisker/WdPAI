@@ -2,7 +2,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/players.css">
-
+    <script type="text/javascript" src="./public/js/players.js" defer></script>
     <title>PLAYERS</title>
 </head>
 
@@ -16,23 +16,22 @@
 
         <div class="players-container">
 
-            <form class="players" action="players" method="POST">
+            <div class="players">
 
                 <div class="players-place">
                     Choose number of players and their names!
                 </div>
-                <input name="player1" type="text" placeholder="player1">
-                <input name="player2" type="text" placeholder="player2">
-                <input name="player3" type="text" placeholder="player3">
-                <input name="player4" type="text" placeholder="player4">
-                <input name="player5" type="text" placeholder="player5">
+                <input name="player1" id="player1_in" type="text" placeholder="player1">
+                <input name="player2" id="player2_in" type="text" placeholder="player2">
+                <input name="player3" id="player3_in" type="text" placeholder="player3">
+                <input name="player4" id="player4_in" type="text" placeholder="player4">
+                <input name="player5" id="player5_in" type="text" placeholder="player5">
                 <div class="number-place">
                     Choose number of rounds!
                 </div>
-                <input name="rounds" type="number" placeholder="1">
-                <button type="submit">PLAY</button>
-            </form>
+                <input name="rounds" id="number_of_rounds_in" type="number" placeholder="1">
+                <button type="submit" id="play_b">PLAY</button>
+            </div>
         </div>
-
     </div>
 </body>
