@@ -1,17 +1,32 @@
-Jak połączyć się z laptopa
+Web app design class project - Game Support
 
-Dodanie pliku config.php
+Simple web app that allows you to roll dices and store scoreboards.
 
-<?php
+Technologies:
+-PHP
+-HTML
+-CSS
+-JS
+-PostgreSQL
 
-const USERNAME = 'postgres';
-const PASSWORD = '';
-const HOST = 'ipconfig IPv4';
-const DATABASE = 'Test';
+------------------------------------------------------------------------------------------------
 
+How to connect to database from your device:
 
+---------------------------------------------------------------
+Add config.php file to WdPAI directory
 
+    <?php
+
+    const USERNAME = 'postgres'; Your username
+    const PASSWORD = ''; Your password
+    const HOST = 'ipconfig IPv4'; Your IPv4
+    const DATABASE = 'Test'; Your database name
+---------------------------------------------------------------
+
+Modfy pg_hba, for me it is:
 D:\PROGRAMY\PostgreSQL\data\pg_hba
-dodanie linijki pod IPv4
 
-host    all  	    	all  		ipconfig IPv4/maska      scram-sha-256
+Add line under IPv4:
+
+    host    all  	    	all  		ipconfig IPv4/mask      scram-sha-256
