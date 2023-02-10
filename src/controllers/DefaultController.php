@@ -38,4 +38,14 @@ class DefaultController extends AppController {
     {
         $this->render('scoreboard');
     }
+
+    public function register_b()
+    {
+        $this->render('register');
+    }
+
+    public function login_b()
+    {
+        $this->render('login');
+    }
 }
