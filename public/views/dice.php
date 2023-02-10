@@ -2,7 +2,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/dice.css">
-
+    <script type="text/javascript" src="./public/js/dice.js" defer></script>
     <title>DICE</title>
 </head>
 
@@ -15,53 +15,89 @@
         </div>
 
         <div class="dice-grid">
-
             <div class="dice-row">
                 <img src="public/img/dice4.svg">
-                <button type="button"><img src="public/img/minus.svg"></button>
-                <output for="dice4">0</output>
-                <button type="button"><img src="public/img/plus.svg"></button>
+                <div id="dice4_down">
+                    <input type="image" id="minus4" src="public/img/minus.svg" />
+                </div>
+                <div id="dice4_count" class="dice_out">
+                    0
+                </div>
+                <div id="dice4_up">
+                    <input type="image" id="plus4" src="public/img/plus.svg" />
+                </div>
             </div>
 
             <div class="dice-row">
                 <img src="public/img/dice6.svg">
-                <button type="button"><img src="public/img/minus.svg"></button>
-                <output for="dice6">0</output>
-                <button type="button"><img src="public/img/plus.svg"></button>
+                <div id="dice6_down">
+                    <input type="image" id="minus6" src="public/img/minus.svg" />
+                </div>
+                <div id="dice6_count" class="dice_out">
+                    0
+                </div>
+                <div id="dice6_up">
+                    <input type="image" id="plus6" src="public/img/plus.svg" />
+                </div>
             </div>
 
             <div class="dice-row">
                 <img src="public/img/dice8.svg">
-                <button type="button"><img src="public/img/minus.svg"></button>
-                <output for="dice8">0</output>
-                <button type="button"><img src="public/img/plus.svg"></button>
+                <div id="dice8_down">
+                    <input type="image" id="minus8" src="public/img/minus.svg" />
+                </div>
+                <div id="dice8_count" class="dice_out">
+                    0
+                </div>
+                <div id="dice8_up">
+                    <input type="image" id="plus8" src="public/img/plus.svg" />
+                </div>
             </div>
 
             <div class="dice-row">
                 <img src="public/img/dice10.svg">
-                <button type="button"><img src="public/img/minus.svg"></button>
-                <output for="dice10">0</output>
-                <button type="button"><img src="public/img/plus.svg"></button>
+                <div id="dice10_down">
+                    <input type="image" id="minus10" src="public/img/minus.svg" />
+                </div>
+                <div id="dice10_count" class="dice_out">
+                    0
+                </div>
+                <div id="dice10_up">
+                    <input type="image" id="plus10" src="public/img/plus.svg" />
+                </div>
             </div>
 
             <div class="dice-row">
                 <img src="public/img/dice12.svg">
-                <button type="button"><img src="public/img/minus.svg"></button>
-                <output for="dice12">0</output>
-                <button type="button"><img src="public/img/plus.svg"></button>
+                <div id="dice12_down">
+                    <input type="image" id="minus12" src="public/img/minus.svg" />
+                </div>
+                <div id="dice12_count" class="dice_out">
+                    0
+                </div>
+                <div id="dice12_up">
+                    <input type="image" id="plus12" src="public/img/plus.svg" />
+                </div>
             </div>
 
             <div class="dice-row">
                 <img src="public/img/dice20.svg">
-                <button type="button"><img src="public/img/minus.svg"></button>
-                <output for="dice20">0</output>
-                <button type="button"><img src="public/img/plus.svg"></button>
+                <div id="dice20_down">
+                    <input type="image" id="minus20" src="public/img/minus.svg" />
+                </div>
+                <div id="dice20_count" class="dice_out">
+                    0
+                </div>
+                <div id="dice20_up">
+                    <input type="image" id="plus20" src="public/img/plus.svg" />
+                </div>
             </div>
         </div>
 
-        <button class="roll" type="submit">ROLL!</button>
+        <input type="button" class="roll" id="roll" value="ROLL!"/>
+
         <div class="result">
-            <output for="dice-result">5+3+4+6=18</output>
+            <output id="roll_out">0</output>
         </div>
     </div>
 </body>

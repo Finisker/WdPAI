@@ -54,16 +54,23 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    justify-items: center;
+    font-size: 32px;
+    font-weight: 700;
 }
 
-.dice-row>button{
+.dice_out{
+    margin: 1em;
+}
+
+
+input{
     height: fit-content;
     background: transparent;
     border: none;
 }
 
-.dice-row>button:hover{
+input:hover{
     filter: invert(70%);
 }
 
